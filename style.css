@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav .logo{
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    color: blanchedalmond;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    text-transform: uppercase;
+
+}
+nav .logo{
+    
+    height: 60px;
+    margin: 3px 62px;
+    font-size: 2rem;
+    font-weight: bolder;
+    /* background-color: blue; */
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li{ 
+    list-style: none;
+    font-size: 1.1rem;
+}
+/* nav ul li a{
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+} */
+
+nav .menu a{
+    
+    display: block;
+    padding: 3px 22px;
+    /* width: 25%; */
+    text-decoration: none;
+    /* color: white; */
+    /* font-size: 1.3rem; */
+    font-weight: 700;
+    
+    text-shadow: 2px 1px 5px black;
+    
+}
+nav .item{
+    color: #00b894;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h3{
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 20px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 5px black;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 4px;
+    padding: 12px 30px;transition: all .5s ease;
+}
+section .btn1{
+    background-color: blanchedalmond;
+    color: black;
+}
+section .btn2{
+    background-color: #00b894;
+    color:white;
+}
+section .btn2:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+section .btn1:hover{
+    background-color: #00b894;
+    color:white;
+}
+/* nav .menu a:first-child{
+    color: #00b894;
+} */
+.change-content::after{
+    content: '';
+    animation: varun 30s linear infinite;
+   
+    color: #00b894;
+}
+
+@keyframes varun{
+    0%{
+        content:"DARJEELING";
+        
+    }
+    20%{
+        content: "DELHI";
+    }
+    35%{
+        content: "RISHIKESH";
+    }
+    60%{
+        content: "AGRA";
+    }
+    80%{
+        content: "MUMBAI";
+    }
+    100%{
+        content: "GOA";
+    }
+}
+header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('india.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.90;
+    animation: xyz 30s linear infinite;
+   
+}
+@keyframes xyz{
+    
+    0%{
+                background-image: url(dar.jpg);
+    }
+    25%{
+        
+        background-image: url(delhi.jpg);
+    
+    }
+    35%{
+        
+        background-image: url(rishikesh.jpg);
+    }
+    60%{
+        
+        background-image: url(tajmahal.jpg);
+    }
+    80%{
+        
+        background-image: url(mumbai.jpg);
+    }
+    100%{
+        
+        background-image: url(goa.jpg );
+    }
+}
